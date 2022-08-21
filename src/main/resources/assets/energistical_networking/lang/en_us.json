@@ -1,0 +1,13 @@
+{
+  "itemGroup.energistical_networking.main": "Energistical Networking",
+
+  "block.energistical_networking.network_emitter": "Network Emitter",
+  "block.energistical_networking.network_receiver": "Network Receiver",
+  "block.energistical_networking.network_terminal": "Network Terminal",
+  "item.energistical_networking.network_linker": "Network Linker",
+  "item.energistical_networking.resonance_crystal": "Resonance Crystal",
+
+  "tooltip.energistical_networking.linker.info": "Currently Selected Pos: (%s, %s, %s)",
+
+  "message.energistical_networking.link_too_far": "Too far! (Maximum 128)"
+}

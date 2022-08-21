@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "energistical_networking:block/network_emitter",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "energistical_networking:block/network_emitter",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "energistical_networking:block/network_emitter",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "energistical_networking:block/network_emitter",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "energistical_networking:block/network_emitter"
+    },
+    "facing=west": {
+      "model": "energistical_networking:block/network_emitter",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
