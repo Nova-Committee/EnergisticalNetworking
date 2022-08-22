@@ -11,10 +11,10 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	maven { // define a new repository
-		url = "https://kanpov.github.io/maven" // define the url
-		content { // this block configures what exactly we can use from the repository
-			includeGroup "com.redgrapefruit.itemnbt" // only require the library and nothing else
+	maven {
+		url = "https://kanpov.github.io/maven"
+		content {
+			includeGroup "com.redgrapefruit.itemnbt"
 		}
 	}
 }

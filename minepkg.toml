@@ -1,0 +1,27 @@
+
+# Preview of the minepkg.toml format! Could break anytime!
+manifestVersion = 0
+
+[package]
+  type = "mod"
+  name = "energistical-networking"
+  description = "Wireless energy transfer network."
+  version = "0.1.0+mc1.19.2"
+  platform = "fabric"
+  license = "MIT"
+  source = "https://github.com/Nova-Committee/EnergisticalNetworking"
+  author = "pkstDev"
+
+# These are global requirements
+[requirements]
+  minecraft = "~1.19"
+  fabricLoader = ">=0.14.6"
+
+[dependencies]
+  fabric = "*"
+
+[dev]
+  buildCommand = "./gradlew build"
+
+  [dev.dependencies]
+    test-mansion = "*"

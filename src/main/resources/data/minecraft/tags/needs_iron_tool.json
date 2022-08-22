@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "energistical_networking:network_emitter",
+    "energistical_networking:network_receiver",
+    "energistical_networking:network_terminal"
+  ]
+}

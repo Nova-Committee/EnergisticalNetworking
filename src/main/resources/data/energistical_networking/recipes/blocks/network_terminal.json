@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "energistical_networking:resonance_crystal"
+    },
+    "I": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "III",
+    "#X#",
+    "III"
+  ],
+  "result": {
+    "item": "energistical_networking:network_terminal"
+  }
+}

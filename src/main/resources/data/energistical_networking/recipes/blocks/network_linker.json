@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "energistical_networking:resonance_crystal"
+    }
+  },
+  "pattern": [
+    "I#I",
+    "IXI",
+    "I#I"
+  ],
+  "result": {
+    "item": "energistical_networking:network_linker"
+  }
+}

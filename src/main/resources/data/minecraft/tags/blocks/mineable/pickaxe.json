@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "energistical_networking:resonance_crystal_ore",
+    "energistical_networking:network_emitter",
+    "energistical_networking:network_receiver",
+    "energistical_networking:network_terminal"
+  ]
+}

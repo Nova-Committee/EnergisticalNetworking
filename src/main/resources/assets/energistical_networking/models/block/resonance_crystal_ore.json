@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "energistical_networking:block/resonance_crystal_ore"
+  }
+}

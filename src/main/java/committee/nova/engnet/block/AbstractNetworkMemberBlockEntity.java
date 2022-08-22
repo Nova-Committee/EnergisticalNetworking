@@ -47,7 +47,8 @@ public abstract class AbstractNetworkMemberBlockEntity extends BlockEntity imple
     protected static boolean validate(World world, BlockPos pos) {
         if (pos == null) return false;
         List<Boolean> valid = new ArrayList<>();
-        for (Direction dir : Direction.values()) {
+        List<Direction> dirs = List.of(Direction.DOWN, Direction.UP);
+        for (Direction dir : dirs) {
             EnergyStorage storage = EnergyStorage.SIDED.find(world, pos, dir);
             valid.add(storage != null && world.getBlockEntity(pos) instanceof NetworkTerminalBlockEntity);
         }

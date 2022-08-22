@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:blue_dye"
+    },
+    "I": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "X": {
+      "item": "energistical_networking:resonance_crystal"
+    }
+  },
+  "pattern": [
+    "#I#",
+    "IXI",
+    "#I#"
+  ],
+  "result": {
+    "item": "energistical_networking:network_receiver"
+  }
+}

@@ -4,6 +4,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import team.reborn.energy.api.EnergyStorage;
@@ -58,7 +59,7 @@ public class NetworkEmitterBlockEntity extends AbstractNetworkMemberBlockEntity 
             }
         }
         if (validate(world, this.targetPos)) {
-            EnergyStorage target = EnergyStorage.SIDED.find(world, targetPos, world.getBlockState(pos).get(FacingBlockWithEntity.FACING));
+            EnergyStorage target = EnergyStorage.SIDED.find(world, targetPos, Direction.UP);
             EnergyStorageUtil.move(energyStorage, target, Long.MAX_VALUE, null);
         }
         markDirty();

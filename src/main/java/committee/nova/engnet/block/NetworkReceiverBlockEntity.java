@@ -4,6 +4,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 import team.reborn.energy.api.EnergyStorage;
@@ -51,7 +52,7 @@ public class NetworkReceiverBlockEntity extends AbstractNetworkMemberBlockEntity
     public void tick(World world, BlockPos pos, BlockState state) {
         if (world.isClient()) return;
         if (validate(world, this.sourcePos)) {
-            EnergyStorage source = EnergyStorage.SIDED.find(world, sourcePos, world.getBlockState(pos).get(FacingBlockWithEntity.FACING));
+            EnergyStorage source = EnergyStorage.SIDED.find(world, sourcePos, Direction.UP);
             EnergyStorageUtil.move(source, energyStorage, Long.MAX_VALUE, null);
         }
         BlockEntity be = world.getBlockEntity(pos.offset(world.getBlockState(pos).get(FacingBlockWithEntity.FACING).getOpposite()));

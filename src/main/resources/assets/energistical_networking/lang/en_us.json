@@ -4,6 +4,8 @@
   "block.energistical_networking.network_emitter": "Network Emitter",
   "block.energistical_networking.network_receiver": "Network Receiver",
   "block.energistical_networking.network_terminal": "Network Terminal",
+  "block.energistical_networking.resonance_crystal_ore": "Resonance Crystal Ore",
+
   "item.energistical_networking.network_linker": "Network Linker",
   "item.energistical_networking.resonance_crystal": "Resonance Crystal",
 
