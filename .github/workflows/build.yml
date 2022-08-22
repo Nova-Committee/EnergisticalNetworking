@@ -41,6 +41,7 @@ jobs:
           name: Artifacts
           path: build/libs/
       - name: "create auto pre-release"
+        if: ${{ runner.os == 'Linux' && matrix.java == '17' }}
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.RELEASE_TOKEN }}"
