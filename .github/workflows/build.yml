@@ -49,4 +49,4 @@ jobs:
           prerelease: true
           title: "Development Build"
           files: |
-            *.jar
+            build/libs/*.jar
