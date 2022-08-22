@@ -37,3 +37,9 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+      - name: Create a Release
+        uses: elgohr/Github-Release-Action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        with:
+          title: Auto Release
